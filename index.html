@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add Arabic font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Fallback message in case of styling issues -->
     <noscript>
-        <div style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f8d7da; color: #721c24; border-radius: 5px;">
+        <div
+            style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f8d7da; color: #721c24; border-radius: 5px;">
             <p><strong>Warning:</strong> This site requires JavaScript to be enabled for proper functioning.</p>
         </div>
     </noscript>
-    
-    <div style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #cce5ff; color: #004085; border-radius: 5px; display: none;" id="fallbackMessage">
-        <p><strong>Note:</strong> If you're seeing this message without proper styling, there might be an issue with the CSS loading.</p>
+
+    <div style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #cce5ff; color: #004085; border-radius: 5px; display: none;"
+        id="fallbackMessage">
+        <p><strong>Note:</strong> If you're seeing this message without proper styling, there might be an issue with the
+            CSS loading.</p>
         <p>Try refreshing the page or checking your browser console for errors.</p>
     </div>
-    
+
     <header>
-        <!-- <div class="announcement-banner">
-            <div class="container">
-                <p>🛡️ Introducing Guardrails: The contextual security layer for the agentic era. <a href="#">Read our announcement now →</a></p>
-            </div>
-        </div> -->
         <div class="container">
             <nav>
                 <div class="logo">
                     <a href="/">TaqniahTek </a>
                 </div>
-              <!--   <ul class="nav-links">
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/careers.html">Careers</a></li>
-                </ul> -->
+                <ul class="nav-links">
+                    <li>
+                        <button id="languageToggle" class="language-toggle" aria-label="Toggle Language">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang">EN</span>
+                        </button>
+                    </li>
+                    <li><a href="/usecases.html" data-en="Use Cases" data-ar="حالات الاستخدام">Use Cases</a></li>
+                    <li><a href="/blog.html" data-en="Blog" data-ar="المدونة">Blog</a></li>
+
+
+                </ul>
             </nav>
         </div>
     </header>
@@ -47,40 +55,46 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Making Modern Tech Accessible</h1>
-                    <h3>We help customers create modern, reliable and robust products.</h3>
-                    <!--  <div class="hero-buttons">
-                            <a href="#" class="btn btn-primary">▶ Try it</a>
-                            <a href="#" class="btn btn-secondary">Learn More</a>
-                        </div> -->
+                    <h1 data-en="Making Modern Tech Accessible" data-ar="نجعل التقنية الحديثة في متناول الجميع">Making
+                        Modern Tech Accessible</h1>
+                    <h3 data-en="We help customers create modern, reliable and robust products."
+                        data-ar="نساعد عملائنا في إنشاء منتجات حديثة وموثوقة وقوية.">We help customers create modern,
+                        reliable and robust products.</h3>
+
                 </div>
-        <!--         <div class="hero-image">
-                    <img src="/images/background.jpg" alt="Hero Illustration">
-                </div> -->
             </div>
         </section>
 
         <section class="products">
             <div class="container">
-                <h2 class="section-title">We are here to help you!</h2>
-                
-                <div class="product-cards"> 
+                <h2 class="section-title" data-en="We are here to help you!" data-ar="نحن هنا لمساعدتك!">We are here to
+                    help you!</h2>
+
+                <div class="product-cards">
                     <div class="product-card">
-                        <h2>Web Applications Development</h2>
-                        <h3>Build modern, scalable web applications tailored to your needs</h3>
+                        <h2 data-en="Web Applications Development" data-ar="تطوير تطبيقات الويب">Web Applications
+                            Development</h2>
+                        <h3 data-en="Build modern, scalable web applications tailored to your needs"
+                            data-ar="بناء تطبيقات ويب حديثة وقابلة للتوسع مصممة خصيصاً لاحتياجاتك">Build modern,
+                            scalable web applications tailored to your needs</h3>
                     </div>
 
                     <div class="product-card">
-                        <h2>AI ChatBots</h2>
-                        <h3>Enhance customer engagement with intelligent chatbots</h3>
+                        <h2 data-en="AI ChatBots" data-ar="روبوتات المحادثة الذكية">AI ChatBots</h2>
+                        <h3 data-en="Enhance customer engagement with intelligent chatbots"
+                            data-ar="تعزيز تفاعل العملاء من خلال روبوتات المحادثة الذكية">Enhance customer engagement
+                            with intelligent chatbots</h3>
                     </div>
 
                     <div class="product-card">
-                        <h2>Automation Solutions & AI Agents</h2>
-                        <h3>Streamline your business processes with custom automation and intelligent agents</h3>
+                        <h2 data-en="Automation Solutions & AI Agents" data-ar="حلول الأتمتة والوكلاء الأذكياء">
+                            Automation Solutions & AI Agents</h2>
+                        <h3 data-en="Streamline your business processes with custom automation and intelligent agents"
+                            data-ar="تبسيط عمليات عملك مع الأتمتة المخصصة والوكلاء الأذكياء">Streamline your business
+                            processes with custom automation and intelligent agents</h3>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
         </section>
@@ -88,24 +102,26 @@
         <section class="contact">
             <div class="container">
                 <div class="contact-content">
-                    <h2>Get In Touch</h2>
-                    <h3>Have questions? We'd love to hear from you.</h3>
+                    <h2 data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</h2>
+                    <h3 data-en="Have questions? We'd love to hear from you." data-ar="لديك أسئلة؟ يسعدنا سماعك.">Have
+                        questions? We'd love to hear from you.</h3>
                     <div class="contact-form">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" id="nameInput" placeholder="Your Name" data-placeholder-en="Your Name"
+                                data-placeholder-ar="اسمك" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" id="emailInput" placeholder="Your Email"
+                                data-placeholder-en="Your Email" data-placeholder-ar="بريدك الإلكتروني" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                            <textarea id="messageInput" placeholder="Your Message" data-placeholder-en="Your Message"
+                                data-placeholder-ar="رسالتك" rows="4" required></textarea>
                         </div>
-                        <button class="btn btn-primary">Send Message</button>
+                        <button class="btn btn-primary" data-en="Send Message" data-ar="إرسال الرسالة">Send
+                            Message</button>
                     </div>
                 </div>
-               <!--  <div class="contact-image">
-                    <img src="./images/hero-dark.svg" alt="A geometric illustration showing connectivity">
-                </div> -->
             </div>
         </section>
     </main>
@@ -117,15 +133,19 @@
                     <p>TaqniahTek</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Privacy Policy</a>
+                    <a href="#" data-en="Terms of Use" data-ar="شروط الاستخدام">Terms of Use</a>
+                    <a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a>
                 </div>
             </div>
             <div class="copyright">
-            <p>© 2025, TaqniahTek | German Engineering & Expertise <span title="German flag" style="font-size:1.2em;">🇩🇪</span></p>            </div>
+                <p data-en="© 2025, TaqniahTek | German Engineering & Expertise 🇩🇪"
+                    data-ar="© 2025، تقنية تك | الهندسة والخبرة الألمانية 🇩🇪">© 2025, TaqniahTek | German Engineering
+                    & Expertise <span title="German flag" style="font-size:1.2em;">🇩🇪</span></p>
+            </div>
         </div>
     </footer>
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>
