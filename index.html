@@ -36,14 +36,15 @@
                     <a href="/">TaqniahTek </a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#products" data-en="Use Cases" data-ar="حالات الاستخدام">Use Cases</a></li>
-                    <li><a href="#contact" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a></li>
                     <li>
                         <button id="languageToggle" class="language-toggle" aria-label="Toggle Language">
                             <i class="fas fa-globe"></i>
                             <span id="currentLang">EN</span>
                         </button>
                     </li>
+                    <li><a href="#about" data-en="About Us" data-ar="من نحن">About Us</a></li>
+                    <li><a href="#products" data-en="Use Cases" data-ar="خدماتنا">Use Cases</a></li>
+                
                 </ul>
             </nav>
         </div>
@@ -62,8 +63,7 @@
                 </div>
             </div>
         </section>
-
-         <section class="products" id="products">
+          <section class="products" id="products">
             <div class="container">
                 <h2 class="section-title" data-en="We are here to help you!" data-ar="نحن هنا لمساعدتك!">We are here to help you!</h2>
 
@@ -91,31 +91,51 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+             <section class="about" id="about">
             <div class="container">
-                <div class="contact-content">
-                    <h2 data-en="Get in Touch" data-ar="تواصل معنا">Get In Touch</h2>
-                    <h3 data-en="Have questions? We'd love to hear from you." data-ar="لديك أسئلة؟ يسعدنا سماعك.">Have
-                        questions? We'd love to hear from you.</h3>
-                    <div class="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="nameInput" placeholder="Your Name" data-placeholder-en="Your Name"
-                                data-placeholder-ar="اسمك" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="emailInput" placeholder="Your Email"
-                                data-placeholder-en="Your Email" data-placeholder-ar="بريدك الإلكتروني" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="messageInput" placeholder="Your Message" data-placeholder-en="Your Message"
-                                data-placeholder-ar="رسالتك" rows="4" required></textarea>
-                        </div>
-                        <button class="btn btn-primary" data-en="Send Message" data-ar="إرسال الرسالة">Send
-                            Message</button>
+                <h2 class="section-title" data-en="About Us" data-ar="من نحن">About Us</h2>
+                <div class="about-content">
+                    <p data-en="TaqniahTek provides end-to-end technology consulting services. We specialize in designing and implementing high-impact solutions in areas such as software engineering, Artificial Intelligence and process automation. Our approach is practical and results-oriented, ensuring every project delivers measurable business value."
+                       data-ar="تقدم تقنية تك خدمات استشارية تقنية شاملة. نحن متخصصون في تصميم وتنفيذ حلول عالية التأثير في مجالات مثل هندسة البرمجيات والذكاء الاصطناعي وأتمتة العمليات. نهجنا عملي وموجه نحو النتائج، مما يضمن تحقيق كل مشروع قيمة تجارية قابلة للقياس.">
+                        TaqniahTek provides end-to-end technology consulting services. We specialize in designing and implementing high-impact solutions in areas such as software engineering, Artificial Intelligence and process automation. Our approach is practical and results-oriented, ensuring every project delivers measurable business value.
+                    </p>
+                    <p data-en="Our integrated R&D work keeps us at the forefront of technology, enabling us to build robust, future-proof solutions for our clients. From initial strategy to final implementation, we are your trusted partner for navigating the complexities of the digital world."
+                       data-ar="يبقينا عملنا البحثي والتطويري المتكامل في طليعة التكنولوجيا، مما يمكننا من بناء حلول قوية ومستدامة لعملائنا. من الاستراتيجية الأولية إلى التنفيذ النهائي، نحن شريكك الموثوق للتنقل في تعقيدات العالم الرقمي.">
+                        Our integrated R&D work keeps us at the forefront of technology, enabling us to build robust, future-proof solutions for our clients. From initial strategy to final implementation, we are your trusted partner for navigating the complexities of the digital world.
+                    </p>
+    <p class="location" data-en="Aleppo-made 🇸🇾 | Powered by German expertise 🇩🇪" data-ar="صنع في حلب 🇸🇾 | مدعوم بالخبرة الألمانية 🇩🇪">
+                        Aleppo-made 🇸🇾 | Powered by German expertise 🇩🇪
+                    </p>                </div>
+
+                <!-- Contact Us inside About Section -->
+                <div class="contact-wrapper" id="contact">
+                    <div class="contact-content">
+                        <h2 data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</h2>
+                        <h3 data-en="Have questions? We'd love to hear from you." data-ar="لديك أسئلة؟ يسعدنا سماعك.">Have questions? We'd love to hear from you.</h3>
+                         <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="947cd3be-4fe1-42ea-abd1-5f4c1c3ed959">
+                            <input type="hidden" name="subject" value="New Contact from TaqniahTek">
+                            <input type="hidden" name="redirect" value="#">
+                            
+                            <div class="form-group">
+                                <input type="text" name="name" id="nameInput" placeholder="Your Name" data-placeholder-en="Your Name" data-placeholder-ar="اسمك" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="emailInput" placeholder="Your Email" data-placeholder-en="Your Email" data-placeholder-ar="بريدك الإلكتروني" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="messageInput" placeholder="Your Message" data-placeholder-en="Your Message" data-placeholder-ar="رسالتك" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+
+       
+
+       
     </main>
 
     <footer>
@@ -131,10 +151,23 @@
             </div>
             <div class="copyright">
                 <p data-en="© 2025, TaqniahTek | German Engineering & Expertise 🇩🇪"
-                    data-ar="© 2025، تقنية تك | الهندسة والخبرة الألمانية 🇩🇪">© 2025, TaqniahTek | German Engineering
-                    & Expertise <span title="German flag" style="font-size:1.2em;">🇩🇪</span></p>
+                    data-ar="© 2025، تقنية تك">© 2025, TaqniahTek <span title="German flag" style="font-size:1.2em;">🇩🇪</span></p>
             </div>
         </div>
+  <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 data-en="Thank You!" data-ar="شكراً لك!">Thank You!</h2>
+            <p data-en="Your message has been successfully sent. We'll get back to you as soon as possible."
+               data-ar="تم إرسال رسالتك بنجاح. سنعود إليك في أقرب وقت ممكن.">
+                Your message has been successfully sent. We'll get back to you as soon as possible.
+            </p>
+        </div>
+        
     </footer>
 
     <script src="./js/main.js"></script>

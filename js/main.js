@@ -83,4 +83,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
+    // Thank You Modal Functionality
+    const modal = document.getElementById('thankYouModal');
+    const closeModal = document.querySelector('.close-modal');
+    const contactForm = document.querySelector('.contact-form');
+
+    // Handle form submission
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Let the form submit naturally to Web3Forms
+            // But show modal after a brief delay
+            setTimeout(function() {
+                modal.style.display = 'block';
+                contactForm.reset();
+            }, 1000);
+        });
+    }
+
+    // Close modal when clicking X
+    if (closeModal) {
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    }
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Auto close modal after 5 seconds
+    function autoCloseModal() {
+        setTimeout(function() {
+            if (modal.style.display === 'block') {
+                modal.style.display = 'none';
+            }
+        }, 5000);
+    }
+
+    // Trigger auto close when modal is shown
+    const modalObserver = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'style' && modal.style.display === 'block') {
+                autoCloseModal();
+            }
+        });
+    });
+
+    if (modal) {
+        modalObserver.observe(modal, { attributes: true });
+    }
+
 });
