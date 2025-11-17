@@ -70,14 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const translatableElements = document.querySelectorAll('[data-en][data-ar]');
         translatableElements.forEach(element => {
             const translation = element.getAttribute(`data-${lang}`);
-            
-            // Check if it's an input/textarea placeholder
-            if (element.hasAttribute('data-placeholder-en')) {
-                element.placeholder = element.getAttribute(`data-placeholder-${lang}`);
-            } else {
-                element.textContent = translation;
-            }
+            element.textContent = translation;
         });
+
+        const translatableElementswithPlaceholder = document.querySelectorAll('[data-placeholder-en][data-placeholder-ar]');
+        translatableElementswithPlaceholder.forEach(element => {
+            const translation = element.getAttribute(`data-placeholder-${lang}`);
+            element.placeholder = translation;
+            }
+        );
+
+
     }
 
 });
