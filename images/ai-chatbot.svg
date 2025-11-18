@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="chatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A8CC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Chat Bubble -->
+  <path d="M 50 60 Q 50 40 70 40 L 150 40 Q 170 40 170 60 L 170 110 Q 170 130 150 130 L 90 130 L 70 150 L 70 130 Q 50 130 50 110 Z" 
+        fill="url(#chatGrad)" stroke="#007A99" stroke-width="2"/>
+  
+  <!-- AI Brain/Circuit -->
+  <circle cx="110" cy="75" r="25" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Circuit Nodes -->
+  <circle cx="95" cy="70" r="3" fill="#FFFFFF"/>
+  <circle cx="110" cy="65" r="3" fill="#FFFFFF"/>
+  <circle cx="125" cy="70" r="3" fill="#FFFFFF"/>
+  <circle cx="95" cy="85" r="3" fill="#FFFFFF"/>
+  <circle cx="110" cy="90" r="3" fill="#FFFFFF"/>
+  <circle cx="125" cy="85" r="3" fill="#FFFFFF"/>
+  
+  <!-- Connection Lines -->
+  <line x1="95" y1="70" x2="110" y2="65" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="110" y1="65" x2="125" y2="70" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="95" y1="85" x2="110" y2="90" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="110" y1="90" x2="125" y2="85" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="95" y1="70" x2="95" y2="85" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="125" y1="70" x2="125" y2="85" stroke="#FFFFFF" stroke-width="1.5"/>
+  
+  <!-- Message dots -->
+  <circle cx="80" cy="110" r="3" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="90" cy="110" r="3" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="100" cy="110" r="3" fill="#FFFFFF" opacity="0.7"/>
+</svg>
